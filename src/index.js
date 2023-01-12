@@ -5,16 +5,13 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { MemoryRouter as Router } from "react-router-dom";
 import { createMemoryHistory } from "history";
-import { CreditCountContextProvider } from "./Context/creditCountContext";
 
 const history = createMemoryHistory();
 
 ReactDOM.render(
   <React.StrictMode>
     <Router history={history}>
-      <CreditCountContextProvider>
         <App />
-      </CreditCountContextProvider>
     </Router>
   </React.StrictMode>,
   document.getElementById("root")

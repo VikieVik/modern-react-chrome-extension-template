@@ -13,7 +13,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://www.linkedin.com/*", "http://www.linkedin.com/*"],
+      "matches": ["<all_urls>"],
       "js": ["contentScript.bundle.js"],
       "run_at": "document_idle"
     }
@@ -25,6 +25,6 @@
     "128": "img/leadzilla-icon-128.png"
   },
   "options_page": "options.html",
-  "permissions": ["*://*.linkedin.com/*", "webNavigation", "storage"],
+  "permissions": ["<all_urls>", "webNavigation", "storage"],
   "content_security_policy": "script-src 'self' https://apis.google.com; object-src 'self'"
 }
