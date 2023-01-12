@@ -1,0 +1,103 @@
+@import url("antd/dist/antd.css");
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+* {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+:root {
+  --primary-color: "#6F4CEF";
+}
+
+.primary-button {
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  min-height: 35px;
+  padding: 0px 10px;
+  color: #fff;
+  font-size: 13.5px;
+  font-weight: 700;
+  border: 1px solid #5537c2;
+  background-color: #4659ff;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  border-radius: 0.3rem;
+}
+
+.primary-button:hover {
+  background-color: #192de1;
+}
+
+.secondary-button-inactive {
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  padding: 0px 10px;
+  min-height: 35px;
+  color: #151417;
+  font-size: 13.5px;
+  font-weight: 600;
+  background-color: transparent;
+  border: 1px solid #d5d5d5;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  border-radius: 0.3rem;
+}
+
+.secondary-button-inactive:hover {
+  background-color: #f6f6f6;
+}
+
+.secondary-button-active {
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  padding: 0px 10px;
+  min-height: 35px;
+  color: #151417;
+  font-size: 13.5px;
+  font-weight: 600;
+  background-color: #f6f6f6;
+  border: 1px solid #d5d5d5;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  border-radius: 0.3rem;
+  text-shadow: none;
+  box-shadow: none;
+}
+
+.secondary-button-active:hover {
+  border: 1px solid #3c67ff;
+  background-color: #e2e8ff;
+  color: #3c67ff;
+  cursor: pointer;
+}
+
+.ant-modal-content {
+  border-radius: 15px;
+  /* background: red; */
+}
